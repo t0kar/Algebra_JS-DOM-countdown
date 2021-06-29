@@ -15,10 +15,13 @@ var interval = setInterval(function () {
     var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var s = Math.floor((distance % (1000 * 60)) / 1000);
 
-    days.innerHTML = d;
+    days.innerHTML = d < 0 ? "-" : d;
     hours.innerHTML = h < 10 ? "0" + h : h;
+    hours.innerHTML = h < 0 ? "-" : h;
     minutes.innerHTML = m < 10 ? "0" + m : m;
+    minutes.innerHTML = m < 0 ? "-" : m;
     seconds.innerHTML = s < 10 ? "0" + s : s;
+    seconds.innerHTML = s < 0 ? "-" : s;
 
     if (distance < 0) {
         clearInterval(interval);
