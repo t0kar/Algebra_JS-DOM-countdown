@@ -1,0 +1,54 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+img {
+    height: 400px;
+}
+
+.countdown {
+    display: flex;
+}
+
+.time {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.time h2 {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1;
+    margin: 0 0 5px;
+
+}
+
+.time span {
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: light;
+}
+
+.end {
+    color: whitesmoke;
+    font-size: 32px;
+    font-weight: light;
+    text-align: center;
+}
